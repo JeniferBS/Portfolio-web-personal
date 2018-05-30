@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-web-personal",
+  "version": "1.0.0",
+  "description": "si yo cambio algo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeniferBS/Portfolio-web-personal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeniferBS/Portfolio-web-personal/issues"
+  },
+  "homepage": "https://github.com/JeniferBS/Portfolio-web-personal#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.17.5"
+  }
+}

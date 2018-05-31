@@ -9,6 +9,8 @@ app.set('view engine', hbs.extname);
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
   res.render('index');
+  
+
 });
 
 PORT = process.env.PORT || 3000;

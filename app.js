@@ -12,7 +12,9 @@ app.use(express.static('public'));
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
   // email = process.env.CONTACT_EMAIL;
-  res.render('index', {email: CONTACT_EMAIL});
+  // TODO Load projects as JSON
+  // TODO Load the projects in the projects variables
+  res.render('index', {email: CONTACT_EMAIL, projects: []});
 });
 
 PORT = process.env.PORT || 3000;

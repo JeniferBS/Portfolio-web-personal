@@ -1,30 +1,34 @@
-
-
 <!--NAV-->
+<header>
+  <section>
+    <nav>
 
-<ul class="nav justify-content-end navbar navbar-dark text-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">¿Por qué yo?</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Mis proyectos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contacto</a>
-  </li>
-  
-</ul>
+      <ul class="nav navbar navbar-dark  fixed">
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript:saltarA('#descripción')">¿Por qué yo?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:saltarA('#proyectos')">Mis proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:saltarA('#contacto')">Contacto</a>
+        </li>
 
+      </ul>
+    </nav>
+  </section>
+</header>
 
 <!--FIN NAV -->
 
 <!--portada-->
 <div class="fondo">
-  <h1 class="letras">Este es mi <br>
-  portfolio personal.<br>
-  puedes comenzar <br>
-  viendo mis proyectos<br>
-   </h1>
+  <h1 class="letras">Este es mi
+    <br> portfolio personal.
+    <br> puedes comenzar
+    <br> viendo mis proyectos
+    <br>
+  </h1>
   <p class="lead">
     <a class="btn btn-primary btn-lg boton text-center" href="#" role="button">aquí</a>
   </p>
@@ -32,25 +36,27 @@
 <!--FIN portada-->
 
 <!-- -->
-<div class="card text-center">
+<div class="card text-center" id="descripción">
   <div class="card-header">
-    
+
   </div>
   <div class="card-body">
-      
-    
-    <p class="card-text">Hay que aprender para SABER MÁS y para mí esto convierte a alguien en mejor persona y profesional. <br>
-Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DISEÑO GRÁFICO, FOTOGRAFÍA, EDICIÓN DE VÍDEO Y GRABACIÓN. </p>
-    <a href="#" class="btn btn-primary">Ir a proyectos</a>
+
+
+    <p class="card-text">Hay que aprender para SABER MÁS y para mí esto convierte a alguien en mejor persona y profesional.
+      <br> Por ello, me considero una persona ambiciosa en lo que hago:
+      <br> DISEÑO WEB, DISEÑO GRÁFICO, FOTOGRAFÍA, EDICIÓN DE VÍDEO Y GRABACIÓN. </p>
+      <h2>By {{author.name}}</h2>
+    <a href="javascript:saltarA('#proyectos')" class="btn btn-primary">Ir a proyectos</a>
   </div>
   <div class="card-footer text-muted">
-    
+
   </div>
 
 
 
 </div>
-  <!-- -->
+<!-- -->
 
 
 <!-- Slider -->
@@ -71,8 +77,8 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
 <!-- FIN slider -->
 
 <!--galeria de proyectos -->
-<h3 class="alert alert-secondary text-center" role="alert">
- Mis proyectos
+<h3 id="proyectos" class="alert alert-secondary text-center" role="alert">
+  Mis proyectos
 </h3>
 <ul class="nav justify-content-center">
   <li class="nav-item">
@@ -94,7 +100,8 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
     <img class="card-img-top" src="https://websystemperu.com/web/121728f/web-pyme.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Card title that wraps to a new line</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little
+        bit longer.</p>
     </div>
   </div>
   <div class="card p-3">
@@ -102,7 +109,8 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer class="blockquote-footer">
         <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Someone famous in
+          <cite title="Source Title">Source Title</cite>
         </small>
       </footer>
     </blockquote>
@@ -112,7 +120,9 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
     </div>
   </div>
   <div class="card bg-primary text-white text-center p-3">
@@ -120,7 +130,8 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
       <footer class="blockquote-footer">
         <small>
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Someone famous in
+          <cite title="Source Title">Source Title</cite>
         </small>
       </footer>
     </blockquote>
@@ -129,7 +140,9 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
     </div>
   </div>
   <div class="card">
@@ -140,7 +153,8 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer class="blockquote-footer">
         <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Someone famous in
+          <cite title="Source Title">Source Title</cite>
         </small>
       </footer>
     </blockquote>
@@ -148,13 +162,16 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer
+        content than the first to show that equal height action.</p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
     </div>
   </div>
 </div>
 
-<!--FIN galeria de proyectos --> 
+<!--FIN galeria de proyectos -->
 
 <!-- Slider -->
 <div id="carouselExampleSlidesOnly corte" class="carousel slide" data-ride="carousel">
@@ -175,46 +192,81 @@ Por ello, me considero una persona ambiciosa en lo que hago:<br> DISEÑO WEB, DI
 
 
 <!--footer -->
-<div class="alert alert-dark text-center" role="alert">
-    
-   <a href="#" class="alert-link">jebasa1820@hotmail.es</a> 
-   <i class="far fa-copyright"></i> Todos los derechos reservados 
-   <a><i class="fab fa-facebook-square"></i></a>
-   <a><i class="fab fa-linkedin"></i></a>
-   <a><i class="fab fa-github-square"></i></a>
+<div class="alert alert-dark text-center" role="alert" id="contacto">
+
+  <a href="#" class="alert-link">jebasa1820@hotmail.es</a>
+  <i class="far fa-copyright"></i> Todos los derechos reservados
+  <a>
+    <i class="fab fa-facebook-square"></i>
+  </a>
+  <a>
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a>
+    <i class="fab fa-github-square"></i>
+  </a>
 
 </div>
 
 <!-- FIN footer -->
 
 
+
+
 <style>
+  header {
+    background: white;
+    margin-left: 890px;
+    position: fixed;
+    z-index: 100;
 
-.fondo {
+  }
+
+  section {}
+
+
+  nav ul li:hover {
+    background: #6171fc;
+  }
+
+
+  .fondo {
     background-image: url('http://img263.imageshack.us/img263/3426/wallpaperhd3008.jpg');
-    opacity:0.6
-   
-}
+    opacity: 0.6
+  }
 
-.letras{
+  .letras {
 
-    color:white;
-   margin-left: 70px;
-   padding-top:20px;
-   
-
-}
-
-.boton{
+    color: white;
     margin-left: 70px;
-    margin-bottom:30px;
-
-}
-
-.corte {
-    
-  
-}
+    padding-top: 20px;
 
 
+  }
+
+  .boton {
+    margin-left: 70px;
+    margin-bottom: 30px;
+
+  }
 </style>
+
+
+<script>
+  function saltarA(id, tiempo) {
+    var tiempo = tiempo || 1000;
+    $("html, body").animate({ scrollTop: $(id).offset().top }, tiempo);
+  }
+
+
+  var context = {
+  title: "My First Blog Post!",
+  author: {
+    id: 47,
+    name: "Yehuda Katz"
+  },
+  body: "My first post. Wheeeee!"
+};
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

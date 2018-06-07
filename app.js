@@ -2,6 +2,8 @@ var express = require('express')
 var app = express()
 var exp_handlebars  = require('express-handlebars');
 var hbs = exp_handlebars.create({defaultLayout: 'base'});
+const https = require('https');
+
 
 var context = {
   title: "My First Blog Post!",
@@ -20,8 +22,24 @@ app.use(express.static('public'));
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
   res.render('index');
- 
-  
+
+  // https.get(
+  //   'https://www.behance.net/v2/collections/9866/projects?api_key=pgdNQGd3aP8iIwdQmyCNnnHyI4XT752n', function(response) {
+  //   let data = '';
+
+  //   response.on('data', (chunk) => {
+  //         data += chunk;
+  //   });
+
+  //   response.on('end', () => {
+  //       let projects = JSON.parse(data).projects;
+
+  //       for(index in projects) {
+  //         console.log(index);
+  //         console.log(projects[index].covers['original']);
+  //       }
+  //   });
+  // });
 
   // email = process.env.CONTACT_EMAIL;
   // TODO Load projects as JSON

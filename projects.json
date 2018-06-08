@@ -1,51 +1,46 @@
-{
-    "TitleProject": "PROYECTO",
-    "projects":
-    [
-        {
-        "id": 1,
-        "nom": "Web-corporativa",
-        "titol": "Web corporativa",
-        "tema": "Corporativo",
-        "tipus": "Project",
-        "data": "27/01/2018",
-        "estat": "ACABADO",
-        "imatge": "public/images/corporativa.png",
-        "html": "Este proyecto es una página web corporativa para una empresa actual."
-        },
-        {
-        "id": 2,
-        "nom": "Web-responsive",
-        "titol": "Web responsive",
-        "tema": "Responsive",
-        "tipus": "Project",
-        "data": "10/02/2018",
-        "estat": "ACABADO",
-        "imatge": "public/images/responsive.png",
-        "html": "Este proyecto es una página web corporativa y responsive"
-        },
-        {
-        "id": 3,
-        "nom": "Web-bootstrap4",
-        "titol": "Web-bootstrap4",
-        "tema": "bootstrap",
-        "tipus": "Project",
-        "data": "14/04/2018",
-        "estat": "ACABADO",
-        "imatge": "public/images/bootstrap4.png",
-        "html": "Este proyecto es una página web sobre créditos de cine realizada con bootstrap4"
-        },
-        {
-        "id": 4,
-        "nom": "Web-flexbox",
-        "titol": "Web-flexbox",
-        "tema": "flexbox",
-        "tipus": "Project",
-        "data": "06/04/2018",
-        "estat": "ACABADO",
-        "imatge": "public/images/flexbox.png",
-        "html": "Este proyecto es una web personal sobre un artísta fotográfico utilizando la técnica de flexbox para maquetar."
-        }
-        
-    ]
-}
+[
+    {
+    "id": 1,
+    "name": "Web-corporativa",
+    "title": "Web corporativa",
+    "topic": "Corporativo",
+    "type": "Project",
+    "data": "27/01/2018",
+    "status": "ACABADO",
+    "image": "public/images/corporativa.png",
+    "html": "Este proyecto es una página web corporativa para una empresa actual."
+    },
+    {
+    "id": 2,
+    "name": "Web-responsive",
+    "titol": "Web responsive",
+    "topic": "Responsive",
+    "type": "Project",
+    "data": "10/02/2018",
+    "status": "ACABADO",
+    "image": "public/images/responsive.png",
+    "html": "Este proyecto es una página web corporativa y responsive"
+    },
+    {
+    "id": 3,
+    "name": "Web-bootstrap4",
+    "titol": "Web-bootstrap4",
+    "topic": "bootstrap",
+    "type": "Project",
+    "data": "14/04/2018",
+    "status": "ACABADO",
+    "image": "public/images/bootstrap4.png",
+    "html": "Este proyecto es una página web sobre créditos de cine realizada con bootstrap4"
+    },
+    {
+    "id": 4,
+    "name": "Web-flexbox",
+    "titol": "Web-flexbox",
+    "topic": "flexbox",
+    "type": "Project",
+    "data": "06/04/2018",
+    "status": "ACABADO",
+    "image": "public/images/flexbox.png",
+    "html": "Este proyecto es una web personal sobre un artísta fotográfico utilizando la técnica de flexbox para maquetar."
+    }
+]

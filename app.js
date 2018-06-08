@@ -1,4 +1,5 @@
 var express = require('express')
+var fs = require('fs');
 var app = express()
 var exp_handlebars  = require('express-handlebars');
 var hbs = exp_handlebars.create({defaultLayout: 'base'});
@@ -21,7 +22,8 @@ app.use(express.static('public'));
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
-  res.render('index');
+  const projects = JSON.parse(fs.readFileSync('projects.json', 'utf8'));
+  res.render('index', {projects: projects});
 
   // https.get(
   //   'https://www.behance.net/v2/collections/9866/projects?api_key=pgdNQGd3aP8iIwdQmyCNnnHyI4XT752n', function(response) {

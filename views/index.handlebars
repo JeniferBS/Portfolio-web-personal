@@ -1,3 +1,4 @@
+
 <!--NAV-->
 <header>
   <section>
@@ -94,6 +95,16 @@
     <a class="nav-link disabled" href="#">diseño</a>
   </li>
 </ul>
+
+<div>
+{{#each projects }}
+  <p>{{ name }}</p>
+  <p>{{ title }}</p>
+  {{ #each this.images }}
+  <img src="{{ this }}" />
+  {{/each }}
+{{/each}}
+</div>
 
 <div class="card-columns">
   <div class="card">

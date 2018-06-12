@@ -3,7 +3,6 @@
 <header>
   <section>
     <nav>
-
       <ul class="nav navbar navbar-dark  fixed">
         <li class="nav-item">
           <a class="nav-link active" href="javascript:saltarA('#descripción')">¿Por qué yo?</a>
@@ -42,7 +41,6 @@
 
   </div>
   <div class="card-body">
-
 
     <p class="card-text">Hay que aprender para SABER MÁS y para mí esto convierte a alguien en mejor persona y profesional.
       <br> Por ello, me considero una persona ambiciosa en lo que hago:
@@ -100,9 +98,9 @@
 {{#each projects }}
   <p>{{ name }}</p>
   <p>{{ title }}</p>
-  {{ #each this.images }}
+  {{#each this.images }}
   <img src="{{ this }}" />
-  {{/each }}
+  {{/each}}
 {{/each}}
 </div>
 

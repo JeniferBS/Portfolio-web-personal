@@ -5,6 +5,14 @@ var exp_handlebars  = require('express-handlebars');
 var hbs = exp_handlebars.create({defaultLayout: 'base'});
 const https = require('https');
 
+const basicAuth = require('express-basic-auth')
+
+app.use(
+  basicAuth({
+    users: { 'admin': 'supersecret' },
+    challenge: true
+}));
+
 
 var context = {
   title: "My First Blog Post!",

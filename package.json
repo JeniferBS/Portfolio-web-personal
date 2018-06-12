@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/JeniferBS/Portfolio-web-personal#readme",
   "dependencies": {
+    "basic-auth": "^2.0.0",
     "express": "^4.16.3",
+    "express-basic-auth": "^1.1.5",
     "express-handlebars": "^3.0.0",
     "nodemon": "^1.17.5"
   }

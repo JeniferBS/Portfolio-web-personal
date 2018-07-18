@@ -7,26 +7,47 @@ const https = require('https');
 
 const basicAuth = require('express-basic-auth')
 
+users = { 'admin': 'supersecret', 'javi': 'holi' };
+
 app.use(
-  basicAuth({
-    users: { 'admin': 'supersecret' },
-    challenge: true
-}));
+  basicAuth({ users: users, challenge: true }));
 
+// AUTH
+is_valid_user = function(username, password) {
+  return users[username] == password;
+}
 
-var context = {
-  title: "My First Blog Post!",
-  author: {
-    id: 47,
-    name: "Yehuda Katz"
-  },
-  body: "My first post. Wheeeee!"
-};
+register_user = function(username, password) {
+  registered = false;
 
+  if (users[username]) {
+    return registered;
+  }
+
+  users[username] = password;
+  registered = true;
+
+  return registered;
+}
 
 app.engine(hbs.extname, hbs.engine);
 app.set('view engine', hbs.extname);
 app.use(express.static('public'));
+
+app.get('/register', function(req, res) {
+  // TODO si todo es correcto
+  const username = req.params.username
+  const password = req.params.password
+
+  is_valid_user(username, password);
+  persist_user(username, password);
+  // TODO
+});
+
+app.get('/login', function(req, res) {
+  const username = req.params.username;
+  const password = req.params.password;
+});
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
